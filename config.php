@@ -3,8 +3,7 @@
 $return['validation_cases'] = [
     'strict_alpha' => '/[a-zA-Z]/',
     'alpha_space'  => '/[a-zA-Z ]/',
-    'alpha_num'    => '/[a-zA-Z0-9-_ ]/',
-    'password'     => '/[a-zA-Z0-9-_@]$/',
+    'alpha_num'    => '/^[a-zA-Z0-9\s]*$/',
     'alnum'        => '/^[[:alnum:]]{1,}$/',
     'integer'      => '/[0-9]/',
     'xml'          => '/[a-zA-Z0-9\>\<\/ ]$/',
