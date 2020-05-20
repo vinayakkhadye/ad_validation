@@ -1,0 +1,36 @@
+{
+    "status": "000",
+    "request-id": "5364_0_e318d9b2_[ccb]",
+    "type": 2,
+    "size": "banner",
+    "config": {
+        "allow-extraction": 1
+    },
+    "campaigns": {
+        "79830": {
+            "weight": 127,
+            "ads": {
+                "484224": {
+                    "adparams": {
+                        "format": "native",
+                        "image-height": "50",
+                        "image-width": "320",
+                        "ad-orientation": "portrait",
+                        "disable-media-cache": 1,
+                        "vserv-impression": "vservHandleEvent(vAde318d9b2,0);",
+                        "delay": 0,
+                        "video-duration": "30",
+                        "request-id": "5364_484224_e318d9b2_[ccb]"
+                    },
+                    "ad": "{\"title\":\"NativeTestAd\",\"objective\":\"1\",\"campaignid\":\"79830\",\"ctaText\":\"Watch Video\",\"linkUrl\":\"\",\"linkFallback\":\"https:\/\/www.jio.com?trnid=5364.C12_484224_e318d9b2\",\"desc\":\"\",\"rating\":\"\",\"downloads\":\"\",\"price\":\"\",\"imageIcon\":\"https:\/\/jioads.akamaized.net\/i\\\/80x80_e\\\/eba585e38839d752ce29750623dc63b9.jpeg?5364.C12_484224_e318d9b2_A-AN-3.15.8\",\"imageMain\":\"https:\/\/jioads.akamaized.net\/i\\\/1200x627_e\\\/eba585e38839d752ce29750623dc63b9.jpeg?5364.C12_484224_e318d9b2_A-AN-3.15.8\",\"imageMedium\":\"\",\"imageBanner\":\"\",\"imageTile\":\"\",\"additionalCreatives\":{\"240x260\":\"https:\/\/jioads.akamaized.net\/i\\\/240x260_e\\\/eba585e38839d752ce29750623dc63b9.jpeg?5364.C12_484224_e318d9b2_A-AN-3.15.8\",\"320x184\":\"https:\/\/jioads.akamaized.net\/i\\\/320x184_e\\\/eba585e38839d752ce29750623dc63b9.jpeg?5364.C12_484224_e318d9b2_A-AN-3.15.8\"},\"video\":\"<?xml version='1.0' encoding='UTF-8'?><VAST version='2.0'><Ad id='484224'><InLine><AdSystem>VMAX<\\\/AdSystem><Creatives><Creative sequence='1' id='484224'><Linear><Duration>00:00:30<\\\/Duration><TrackingEvents><Tracking event='start'><![CDATA[https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=start&vr=A-AN-3.15.8&IDFA=3c8759e0-050c-49d3-ba77-5b70dfea12c7&]]><\\\/Tracking><Tracking event='firstQuartile'><![CDATA[https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=firstQuartile&vr=A-AN-3.15.8&IDFA=3c8759e0-050c-49d3-ba77-5b70dfea12c7&]]><\\\/Tracking><Tracking event='midpoint'><![CDATA[https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=midpoint&vr=A-AN-3.15.8&IDFA=3c8759e0-050c-49d3-ba77-5b70dfea12c7&]]><\\\/Tracking><Tracking event='thirdQuartile'><![CDATA[https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=thirdQuartile&vr=A-AN-3.15.8&IDFA=3c8759e0-050c-49d3-ba77-5b70dfea12c7&]]><\\\/Tracking><Tracking event='mute'><![CDATA[https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=mute&vr=A-AN-3.15.8&IDFA=3c8759e0-050c-49d3-ba77-5b70dfea12c7&]]><\\\/Tracking><Tracking event='unmute'><![CDATA[https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=unmute&vr=A-AN-3.15.8&IDFA=3c8759e0-050c-49d3-ba77-5b70dfea12c7&]]><\\\/Tracking><Tracking event='pause'><![CDATA[https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=pause&vr=A-AN-3.15.8&IDFA=3c8759e0-050c-49d3-ba77-5b70dfea12c7&]]><\\\/Tracking><Tracking event='resume'><![CDATA[https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=resume&vr=A-AN-3.15.8&IDFA=3c8759e0-050c-49d3-ba77-5b70dfea12c7&]]><\\\/Tracking><Tracking event='complete'><![CDATA[https:\/\/jioads.akamaized.net\/tracking\/v.gif?b=484224&c=79830&zoneid=5364&cb=e318d9b2&ufc=&zae=2&ml=native&tm=0&mn=Jio+Ads+Demo+3.14.8&vr=A-AN-3.15.8&sw=1080&sh=2076&cnt=12&mser=cdn&vuid=I3c8759e0-050c-49d3-ba77-5b70dfea12c7&dat=4&dacp=2&advid=3c8759e0-050c-49d3-ba77-5b70dfea12c7&zt=a&dd=0&pid=79830&app=1&sp=&ai=com.jio.test&fca=1&fcva=2&cpmt=0&cpct=0&cpat=0&cpcvt=0&pb=0.25%7C0.5%7C0.75%7C1.25%7C1.5&so=405874&srcid=5364.C12&zat=4&csz=native&vcpi=3&dvb=Samsung&dvm=SM-G950F&dvmn=Galaxy+S8&dvbr=Chrome+Mobile&dvbv=&co=IN&ci=others&hk=av&apnid=&opid=1203&bs=320x50&os=Android&osv=9.0&osid=3&vpi=3&ute=1&ccb=[ccb]]]><\\\/Tracking><\\\/TrackingEvents><MediaFiles><MediaFile delivery='progressive' bitrate='244' width='244' height='360' type='video\\\/mp4'><![CDATA[https:\/\/jioads.akamaized.net\/v\\\/vast\\\/native_vid_79830_5861_sd.mp4?5364.C12_484224_e318d9b2_A-AN-3.15.8]]><\\\/MediaFile><\\\/MediaFiles><\\\/Linear><\\\/Creative><\\\/Creatives><\\\/InLine><\\\/Ad><\\\/VAST>\",\"audio\":\"\",\"sponsored\":\"\",\"desc2\":\"NativeTestAd\",\"likes\":\"\",\"salePrice\":\"\",\"phone\":\"\",\"address\":\"\",\"displayUrl\":\"\",\"impTrackers\":[\"https:\/\/jioads.akamaized.net\/tracking\/i.gif?b=484224&c=79830&zoneid=5364&cb=e318d9b2&ufc=&zae=2&ml=native&tm=0&mn=Jio+Ads+Demo+3.14.8&vr=A-AN-3.15.8&sw=1080&sh=2076&cnt=12&mser=cdn&vuid=I3c8759e0-050c-49d3-ba77-5b70dfea12c7&dat=4&dacp=2&advid=3c8759e0-050c-49d3-ba77-5b70dfea12c7&zt=a&dd=0&pid=79830&sp=&ai=com.jio.test&fca=1&fcva=2&cpmt=0&cpct=0&cpat=0&cpcvt=0&pb=0.25%7C0.5%7C0.75%7C1.25%7C1.5&so=405874&srcid=5364.C12&zat=4&csz=native&vcpi=3&dvb=Samsung&dvm=SM-G950F&dvmn=Galaxy+S8&dvbr=Chrome+Mobile&dvbv=&co=IN&ci=others&hk=av&apnid=&opid=1203&bs=320x50&os=Android&osv=9.0&osid=3&vpi=3&ute=1&ccb=[ccb]\",\"https:\/\/ad.doubleclick.net\/ddm\/trackimp\/N1020132.3Jio1\"],\"clickTrackers\":[\"https:\/\/ajdivotclibloab24.jio.com\/delivery\/ck.php?p=2__b=484224__zoneid=5364__cb=e318d9b2__dc=1800__cd=jio_cluster-1589900538__c=79830__zae=2__cai=50175__px=1__ml=native__tm=0__mn=Jio+Ads+Demo+3.14.8__vr=A-AN-3.15.8__sw=1080__sh=2076__cnt=12__mser=cdn__vuid=I3c8759e0-050c-49d3-ba77-5b70dfea12c7__dat=4__dacp=2__advid=3c8759e0-050c-49d3-ba77-5b70dfea12c7__zt=a__dd=0__pid=79830__app=1__sp=__ai=com.jio.test__fca=1__fcva=2__cpmt=0__cpct=0__cpat=0__cpcvt=0__pb=0.25%7C0.5%7C0.75%7C1.25%7C1.5__so=405874__srcid=5364.C12__zat=4__csz=native__vcpi=3__dvb=Samsung__dvm=SM-G950F__dvmn=Galaxy+S8__dvbr=Chrome+Mobile__dvbv=__co=IN__ci=others__hk=av__apnid=__opid=1203__bs=320x50__c=79830__os=Android__osv=9.0__osid=3__vpi=3__ute=1__ccb=[ccb]__r=https%3A%2F%2Fwww.jio.com%3Ftrnid%3D5364.C12_484224_e318d9b2&trackonly=1\",\"https:\/\/ad.doubleclick.net\/ddm\/trackimp\/N1020132.HTMLAd1\"],\"customImage\":\"https:\/\/jioads.akamaized.net\/i\\\/1200x450_e\\\/eba585e38839d752ce29750623dc63b9.jpeg?5364.C12_484224_e318d9b2_A-AN-3.15.8\",\"creativeViewTrackers\":[\"https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=__creativeview_[dimension]\"],\"creativeClickTrackers\":[\"https:\/\/jioads.akamaized.net\/tracking\/e.gif?ccb=[ccb]&trnid=5364_484224_e318d9b2&event=__creativeclick_[dimension]\"]}",
+                    "mod": {
+                        "status-urls": ["https:\/\/jioads.akamaized.net\/ad_instructions\/cap_5364_484224.json?ccb=[ccb]"]
+                    }
+                }
+            },
+            "mod": {
+                "status-beacons": ["https:\/\/jioads.akamaized.net\/campaign_beacon\/cap_79830.gif?ccb=[ccb]", "https:\/\/jioads.akamaized.net\/adspot_campaign_beacon\/cap_5364_79830.gif?ccb=[ccb]"]
+            }
+        }
+    }
+}

@@ -50,7 +50,9 @@ $return['mandatory']        = [
                 'allow-extraction' => 'integer'
             ],
             'campaigns'  => [
-                '0' => 'integer'
+	    	//RAVI PATEL : 2020-05-20 : 0 key won't work
+		//Need to figure out the replacement of 0
+                //'0' => 'integer'
             ]
         ]
     ]
