@@ -1,13 +1,14 @@
 <?php
 
 $return['validation_cases'] = [
-    'strict_alpha' => '/[a-zA-Z]/',
-    'alpha_space'  => '/[a-zA-Z ]/',
+    'strict_alpha' => '/^[a-zA-Z]*$/',
+    'alpha_space'  => '/^[a-zA-Z ]*$/',
     'alpha_num'    => '/^[a-zA-Z0-9\s]*$/',
     'alnum'        => '/^[[:alnum:]]{1,}$/',
-    'integer'      => '/[0-9]/',
+    'integer'      => '/^[0-9]*$/',
     'xml'          => '/[a-zA-Z0-9\>\<\/ ]$/',
-    'url'          => '/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i'
+    'url'          => '/^\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i',
+    'request_id'   => '/^[a-zA-Z0-9_\[\]]*$/'
 ];
 $return['mandatory']        = [
     '2' => [
@@ -38,6 +39,18 @@ $return['mandatory']        = [
             ],
             'creativeClickTrackers' => [
                 '0' => 'url'
+            ]
+        ],
+        'multi_ad'  => [
+            'status'     => 'integer',
+            'request-id' => 'request_id',
+            'type'       => 'integer',
+            'size'       => 'strict_alpha',
+            'config'     => [
+                'allow-extraction' => 'integer'
+            ],
+            'campaigns'  => [
+                '0' => 'integer'
             ]
         ]
     ]

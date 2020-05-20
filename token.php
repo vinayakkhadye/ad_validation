@@ -28,10 +28,10 @@ class Token {
                 if (is_array($value)) {
                     foreach ($value as $k => $val) {
                         if (!array_key_exists($k, $value) || empty($jsonData[$key][$k])) {
-                            return $this->forceExit('E03', ['attribute' => $key . '.' . $k]);
+                            return $this->forceExit('E03', ['attribute' => $key . '[' . $k . ']']);
                         }
                         if (!$this->checkValue($val, $jsonData[$key][$k])) {
-                            return $this->forceExit('E04', ['attribute' => $key . '.' . $k]);
+                            return $this->forceExit('E04', ['attribute' => $key . '[' . $k . ']']);
                         }
                     }
                 } else {
@@ -40,6 +40,7 @@ class Token {
                     }
                 }
             }
+            //Optional && Validation Check
             if (!empty($this->config['optional'][$this->adType][$this->type])) {
                 foreach ($this->config['optional'][$this->adType][$this->type] as $opKey => $opValue) {
                     if (!empty($jsonData[$opKey]) || $jsonData[$opKey] != "") {
