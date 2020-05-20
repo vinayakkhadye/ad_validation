@@ -7,7 +7,7 @@
         <meta name="author" content="Jio Platforms Limited">
         <meta name="keywords" content="Jio Platforms Limited">
 
-        <title>Campaign Delivery Ads POS server Validation</title>
+        <title>Campaign Delivery Validation</title>
 
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
