@@ -24,7 +24,7 @@ class Token {
             } else {
                 $response = $this->validateMultiJsonAd($jsonData);
             }
-            if(!empty($response))
+            if (!empty($response))
                 return $response;
             return $this->throwResponse('E00', true);
         } else {
@@ -42,6 +42,7 @@ class Token {
     public function forceExit($code, $data) {
         return $this->throwResponse($code, $data);
     }
+
     public function throwResponse($code, $data = []) {
         $array['code'] = $code;
         if (!empty($data['attribute']))
@@ -54,36 +55,38 @@ class Token {
 
         return $array;
     }
+
     private function validateMandatoryParams($jsonData = [], $type = null) {
-        if(!empty($type)){
+        if (!empty($type)) {
             $this->type = $type;
         }
-            //Mandatory && Validation Check
-            if (empty($this->config['mandatory'][$this->adType][$this->type])) {
-                return $this->forceExit('E05', []);
+        //Mandatory && Validation Check
+        if (empty($this->config['mandatory'][$this->adType][$this->type])) {
+            return $this->forceExit('E05', []);
+        }
+        foreach ($this->config['mandatory'][$this->adType][$this->type] as $key => $value) {
+            if (!array_key_exists($key, $jsonData) || empty($jsonData[$key])) {
+                return $this->forceExit('E03', ['attribute' => $key]);
             }
-            foreach ($this->config['mandatory'][$this->adType][$this->type] as $key => $value) {
-                if (!array_key_exists($key, $jsonData) || empty($jsonData[$key])) {
-                    return $this->forceExit('E03', ['attribute' => $key]);
-                }
-                if (is_array($value)) {
-                    foreach ($value as $k => $val) {
-                        if (!array_key_exists($k, $value) || empty($jsonData[$key][$k])) {
-                            return $this->forceExit('E03', ['attribute' => $key . '[' . $k . ']']);
-                        }
-                        if (!$this->checkValue($val, $jsonData[$key][$k])) {
-                            return $this->forceExit('E04', ['attribute' => $key . '[' . $k . ']']);
-                        }
+            if (is_array($value)) {
+                foreach ($value as $k => $val) {
+                    if (!array_key_exists($k, $value) || empty($jsonData[$key][$k])) {
+                        return $this->forceExit('E03', ['attribute' => $key . '[' . $k . ']']);
                     }
-                } else {
-                    if (!$this->checkValue($value, $jsonData[$key])) {
-                        return $this->forceExit('E04', ['attribute' => $key]);
+                    if (!$this->checkValue($val, $jsonData[$key][$k])) {
+                        return $this->forceExit('E04', ['attribute' => $key . '[' . $k . ']']);
                     }
                 }
+            } else {
+                if (!$this->checkValue($value, $jsonData[$key])) {
+                    return $this->forceExit('E04', ['attribute' => $key]);
+                }
+            }
         }
     }
+
     private function validateOptionalParams($jsonData = [], $type = null) {
-        if(!empty($type)){
+        if (!empty($type)) {
             $this->type = $type;
         }
         //Optional && Validation Check
@@ -111,11 +114,11 @@ class Token {
 
     private function validateSingleJsonAd($jsonData = []) {
         $responseArray = $this->validateMandatoryParams($jsonData);
-        if(!empty($responseArray)){
+        if (!empty($responseArray)) {
             return $responseArray;
         }
         $responseArray = $this->validateOptionalParams($jsonData);
-        if(!empty($responseArray)){
+        if (!empty($responseArray)) {
             return $responseArray;
         }
     }
@@ -123,11 +126,11 @@ class Token {
     private function validateMultiJsonAd($jsonData = []) {
         //RAVI PATEL : 2020-05-20 : VALIDATE OUTER JSON OF MULTIAD
         $responseArray = $this->validateMandatoryParams($jsonData);
-        if(!empty($responseArray)){
+        if (!empty($responseArray)) {
             return $responseArray;
         }
         $responseArray = $this->validateOptionalParams($jsonData);
-        if(!empty($responseArray)){
+        if (!empty($responseArray)) {
             return $responseArray;
         }
         //RAVI PATEL : 2020-05-20 : VALIDATE INNER ADS JSON WITH LOOP
@@ -136,11 +139,11 @@ class Token {
                 $singleAdJson = json_decode($adData['ad'], true);
                 //RAVI PATEL : 2020-05-20 : VALIDATE SINGLE AD
                 $responseArray = $this->validateMandatoryParams($singleAdJson, 'single_ad');
-                if(!empty($responseArray)){
+                if (!empty($responseArray)) {
                     return $responseArray;
                 }
                 $responseArray = $this->validateOptionalParams($singleAdJson, 'single_ad');
-                if(!empty($responseArray)){
+                if (!empty($responseArray)) {
                     return $responseArray;
                 }
             }
