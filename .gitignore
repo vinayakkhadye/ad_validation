@@ -1,1 +1,5 @@
-nbproject/*
+/nbproject/*
+.env
+/config/*
+/storage/*
+/vendor/*
